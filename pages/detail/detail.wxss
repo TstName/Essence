@@ -1,0 +1,132 @@
+.detail-main{
+  display: flex;
+  flex-direction: column;
+}
+.detail-top{
+  position: relative;
+  height: 450rpx;
+  width: 100%;
+  text-align: center;
+}
+.detail-top-go{
+  position: absolute;
+  top: 50rpx;
+  right: 50rpx;
+  height: 80rpx;
+  width: 80rpx;
+}
+.detail-top-img{
+  height: 100%;
+  width: 100%;
+}
+.detail-top-num{
+  background: #bd9564;
+  position: absolute;
+  top: -10rpx;
+  left: -20rpx;
+  height: 40rpx;
+  width: 40rpx;
+  border-radius: 40rpx;
+  font-size: 30rpx;
+  text-align: center;
+  line-height: 40rpx;
+}
+.detail-center{
+  height: 350rpx;
+  border-bottom: 20rpx solid #eee;
+}
+.detail-center-main{
+  height: 100rpx;
+  width: 90%;
+  margin: 0 auto;
+  background: #bd9564;
+  border-radius:100px;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  align-items: center;
+  font-size: 30rpx;
+  color: #fff;
+}
+.imagesone{
+  height: 50rpx;
+  width:50rpx;
+}
+.imagestwo{
+  height: 40rpx;
+  width:40rpx;
+  margin-left: 40rpx;
+}
+.detail-center-main-c{
+  border-right: 3rpx dashed #fff;
+  height: 40rpx;
+}
+.detail-center-main-L{
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+}
+.detail-center-main-L-num{
+  margin: 0 60rpx;
+}
+.detail-center-t{
+  margin-top: 50rpx;
+  text-align: center;
+  line-height: 50rpx;
+  font-size: 20rpx;
+  height: 50rpx;
+}
+.detail-center-c{
+  text-align: center;
+  line-height: 50rpx;
+  height: 50rpx;
+  font-size: 35rpx;
+}
+.detail-center-b{
+   margin-top: 10rpx;
+  text-align: center;
+  line-height: 50rpx;
+  height: 50rpx;
+  font-size: 30rpx;
+}
+.detail-bottom{
+  height: 400rpx;
+  width: 100%;
+}
+.detail-bottom-tab-t{
+  display: flex;
+  justify-content:space-between;
+  width: 100%; 
+  border-bottom: 2rpx solid #eee; 
+}
+.detail-bottom-tab-b{
+  width: 33%;
+  text-align: center;
+   height: 80rpx;
+  line-height:  80rpx;
+}
+.detail-bottom-tab-bottom{
+height: 310rpx;
+width: 100%;
+}
+.detail-bottom-tab-bottom-bottom{
+  text-align: center;
+  color: #ccc;
+  font-size: 23rpx;
+  line-height: 100rpx;
+}
+.detail-bottom-tab-bottom-center{
+  text-align: center;
+  line-height: 100rpx; 
+}
+.detail-bottom-tab-bottom-top{
+   text-align: center;
+  line-height: 100rpx; 
+}
+.disabled{
+  color: #ccc;
+}
+.tab{
+  border-bottom: 1rpx solid #bd9564;
+  color: #bd9564;
+}

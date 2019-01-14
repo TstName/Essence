@@ -1,0 +1,5 @@
+@import "../tpl/products/products.wxss";
+.theme-topimg{
+  height: 400rpx;
+  width: 100%;
+}

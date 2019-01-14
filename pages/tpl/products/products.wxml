@@ -1,0 +1,12 @@
+
+<template name="products">
+  <view class='template-wrap' >
+       <block wx:for="{{products}}" wx:key="{{index}}" >
+            <view class='template-main' bindtap='todetail' data-id="{{item._id}}">
+                 <image src="{{root+item.imgPath}}"  class='template-img' />
+                 <view class='template-name'>{{item.name}}</view>
+                 <view class='template-price'>￥{{item.price}}</view>
+            </view>
+       </block>
+  </view>
+</template>

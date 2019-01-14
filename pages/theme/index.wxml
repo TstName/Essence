@@ -1,0 +1,11 @@
+<!--pages/theme/index.wxml-->
+<import src="../tpl/products/products.wxml"/>
+<view wx:if="{{!show}}">
+    <view>
+      <image src='{{root}}{{topimg}}'  class='theme-topimg'></image>
+    </view>
+    <view class='theme-main'>
+        <template is="products" data="{{products,root}}"></template>
+    </view>
+</view>
+<loading wx:if="{{show}}"></loading>

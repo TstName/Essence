@@ -1,0 +1,34 @@
+<!--pages/home/index.wxml-->
+<import src="../tpl/products/products.wxml"/>
+<view hidden='{{!hiddenshow}}'>
+<swiper
+    indicator-dots
+    autoplay
+    indicator-active-color="red"
+    interval="1000"
+    duration="1000"
+    class='swiper'
+    circular>
+  <block wx:for="{{banners}}"    wx:key="{{index}}">
+    <swiper-item>
+      <image src="{{root+item.imagePath}}" class="slide-image"/>
+    </swiper-item>
+  </block>
+</swiper>
+<view class='themes'>
+    <view class='themes-header'>精选主题</view>
+     <block wx:for="{{themes}}"    wx:key="{{index}}">
+        <view wx:if="{{index===2}}" class='themes-banner  themes-img2'>
+          <image src="{{root+item.imgPath}}" class='img' bindtap='tothemes' data-id="{{item._id}}"/>
+        </view>
+        <view wx:else class='themes-banner'>
+          <image src="{{root+item.imgPath}}"  class='themes-img' bindtap='tothemes' data-id="{{item._id}}" />
+        </view>
+     </block>
+</view>
+<view class='themes-new'>
+     <view class='themes-header'>新品首发</view>
+      <template is="products" data="{{products,root}}"></template>
+</view>
+</view>
+<loading hidden='{{hiddenshow}}'>加载中...</loading>

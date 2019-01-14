@@ -1,0 +1,52 @@
+<view class='detail-main' wx:if="{{show}}">
+    <view class='detail-top'>
+          <image src='{{root+imgPath}}'></image>
+          <view class='detail-top-go' bindtap='toshopcart'>
+          <image src='../../images/tabcar/cart@top.png' class='detail-top-img'></image>
+                <view class='detail-top-num' wx:if="{{shopcart>0}}">{{shopcart}}</view>
+          </view>
+    </view>
+    <view class='detail-center'>
+            <view class='detail-center-main'>
+              <view class='detail-center-main-L'>
+                  <text>数量</text>
+                  <text class='detail-center-main-L-num'>{{numsum}}</text>
+                    <picker
+                      value="{{0}}"
+                      range="{{arr}}"
+                      bindchange="bindTimeChange"
+                    >
+                    <image src='../../images/tabcar/arrow@down.png' class='imagesone'></image>
+                     </picker>
+              </view>
+              <view class='detail-center-main-c'></view>
+              <view class='detail-center-main-L {{have===0 ? "disabled" :""}}' bindtap='changeshopcart'>
+                  <text>加入购物车</text>
+                  <image src='../../images/tabcar/cart(1).png' class='imagestwo'></image>
+              </view>
+            </view>
+            <view class='detail-center-t'wx:if="{{have>0}}">有货</view>
+             <view class='detail-center-t'wx:else="{{have<=0}}">缺货</view>
+            <view class='detail-center-c'>{{name}}</view>
+            <view class='detail-center-b'>￥{{price}}</view>
+    </view>
+    <view class='detail-bottom'>
+        <view class='detail-bottom-tab-t' >
+            <view bindtap='tabchange' 
+                   data-index = "{{index}}"
+                  class='detail-bottom-tab-b {{tabindex===index? "tab" : ""}}'
+                  wx:for="{{ary}}" wx:key='{index}' >{{item}}
+            </view>
+        </view>
+         <view class='detail-bottom-tab-bottom' >
+          <view class='detail-bottom-tab-bottom-top' wx:if="{{tabindex===0}}">这个很贵</view>
+          <view class='detail-bottom-tab-bottom-center' wx:if="{{tabindex===1}}">没有参数</view>
+          <view class='detail-bottom-tab-bottom-bottom' wx:if="{{tabindex===2}}">七天内可以退款</view>
+        </view>
+    </view>
+  
+   
+ 
+</view>
+<loading wx:else="{{show}}">加载中....</loading>
+

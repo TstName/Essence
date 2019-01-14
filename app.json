@@ -1,0 +1,47 @@
+{
+  "pages": [
+    "pages/home/index",
+    "pages/my/index",
+    "pages/shopcar/index",
+    "pages/category/index",
+    "pages/detail/detail",
+    "pages/theme/index",
+    "pages/order/order"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#bd9564",
+    "navigationBarTextStyle": "light",
+    "navigationBarTitleText": "小程序",
+    "backgroundTextStyle": "black",
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "selectedColor": "#bd9564",
+    "list": [
+      {
+        "pagePath": "pages/home/index",
+        "text": "首页",
+        "iconPath": "/images/tabcar/home.png",
+        "selectedIconPath": "/images/tabcar/home@selected.png"
+      },
+      {
+        "pagePath": "pages/category/index",
+        "text": "分类",
+        "iconPath": "/images/tabcar/category.png",
+        "selectedIconPath": "/images/tabcar/category@selected.png"
+      },
+      {
+        "pagePath": "pages/shopcar/index",
+        "text": "购物车",
+        "iconPath": "/images/tabcar/cart.png",
+        "selectedIconPath": "/images/tabcar/cart@selected.png"
+      },
+      {
+        "pagePath": "pages/my/index",
+        "text": "MY",
+        "iconPath": "/images/tabcar/my.png",
+        "selectedIconPath": "/images/tabcar/my@selected.png"
+      }
+    ]
+  }
+}

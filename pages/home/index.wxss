@@ -1,0 +1,27 @@
+@import "../tpl/products/products.wxss";
+.swiper{
+  height: 400rpx;
+}
+.slide-image{
+  width: 100%;
+  height: 100%;
+}
+.themes-header{
+  height: 100rpx;
+  width: 100%;
+  color:#ab9564;
+  text-align: center;
+  line-height: 100rpx;
+}
+.themes-img{
+  height: 350rpx;
+  width: 50%;
+  float: left;
+}
+.img{
+  width: 100%;
+  height: 350rpx;
+}
+.themes-img2{
+  width: 100%;
+}
